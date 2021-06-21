@@ -1,0 +1,39 @@
+.task{
+    margin-bottom: 1rem;
+    display: flex;
+    width: 600px;
+}
+
+.task span {
+    color: black;
+}
+
+.task i{
+    color: black;
+}
+
+.task.completed label{
+    background-color: rgba(122, 216, 40, 0.5);
+}
+
+.task.completed span{
+    text-decoration: line-through;
+}
+
+.task label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem;
+    background: #f3f3f3;
+}
+
+.task i{
+    z-index: 2;
+    transition: .3s;
+}
+.task i:hover{
+    color: red
+}
