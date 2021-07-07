@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist",
     "target": "es5",
     "lib": [
       "dom",
@@ -16,11 +18,12 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "sourceMap": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "**/*.config.js",
+    "src/**/*"
+  ],
 }

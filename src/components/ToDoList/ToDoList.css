@@ -2,7 +2,10 @@
     margin-bottom: 1rem;
     display: flex;
     width: 600px;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .task span {
     color: black;
@@ -18,7 +21,9 @@
 
 .task.completed span{
     text-decoration: line-through;
+    display: inline-block;
 }
+
 
 .task label {
     width: 100%;
@@ -30,10 +35,28 @@
     background: #f3f3f3;
 }
 
-.task i{
-    z-index: 2;
+
+.ToDoList_task-icons i{
     transition: .3s;
+    padding: 1rem;
 }
-.task i:hover{
-    color: red
+.ToDoList_task-icons_delete:hover{
+    background-color: red;
+    color: white;
 }
+.ToDOList_task-icons_edit:hover{
+    background-color: #f4f520;
+    color: white
+}
+.ToDoList_task-icons_save:hover{
+    background-color: #f4f520;
+    color: white
+}
+.ToDoList_task-icons{
+    display: flex;
+}
+.ToDoList_task-icons i {
+    padding: 1rem;
+    cursor: pointer;
+}
+
