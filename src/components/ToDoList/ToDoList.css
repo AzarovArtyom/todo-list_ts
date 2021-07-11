@@ -1,62 +1,163 @@
-.task{
-    margin-bottom: 1rem;
-    display: flex;
-    width: 600px;
-    justify-content: center;
-    align-items: center;
+.task {
+  margin-bottom: 1rem;
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .task span {
-    color: black;
+  color: black;
 }
 
-.task i{
-    color: black;
+.task i {
+  color: black;
 }
 
-.task.completed label{
-    background-color: rgba(122, 216, 40, 0.5);
+.task.completed label {
+  background-color: rgba(122, 216, 40, 0.5);
 }
 
-.task.completed span{
-    text-decoration: line-through;
-    display: inline-block;
+.task.completed span {
+  text-decoration: line-through;
+  display: inline-block;
 }
-
 
 .task label {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    padding: 1rem;
-    background: #f3f3f3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1rem;
+  background: #f3f3f3;
 }
 
-
-.ToDoList_task-icons i{
-    transition: .3s;
-    padding: 1rem;
-}
-.ToDoList_task-icons_delete:hover{
-    background-color: red;
-    color: white;
-}
-.ToDOList_task-icons_edit:hover{
-    background-color: #f4f520;
-    color: white
-}
-.ToDoList_task-icons_save:hover{
-    background-color: #f4f520;
-    color: white
-}
-.ToDoList_task-icons{
-    display: flex;
-}
 .ToDoList_task-icons i {
-    padding: 1rem;
-    cursor: pointer;
+  transition: 0.3s;
+  padding: 1rem;
 }
 
+.ToDoList_task-icons_delete:hover {
+  background-color: red;
+  color: white;
+}
+
+.ToDoList_task-icons_edit:hover {
+  background-color: #56d5e1;
+  color: white;
+}
+
+.ToDoList_task-icons_save:hover {
+  background-color: rgba(122, 216, 40, 1);
+  color: white;
+}
+
+.ToDoList_task-icons {
+  display: flex;
+}
+
+.ToDoList_task-icons i {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.ToDoList_task{
+  font-size: 18px;
+  margin: 16px 12px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #868684;
+}
+
+.ToDoList_task-title{
+  font-size: 18px;
+  margin: 16px 12px;
+  min-width: 400px;
+}
+
+.ToDoList_task-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.ToDoList_task-info_comment_form{
+  display: flex;
+}
+
+.ToDoForm-button {
+  margin: 16px 12px;
+  background: none;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.ToDoForm-button:hover {
+  background-color: #4db6ac;
+  color: white;
+}
+
+.ToDoList_task-info_comment_input{
+  max-width: 350px;
+}
+
+.ToDoList_task-info_comment{
+  display: flex;
+}
+
+.ToDoList_task-info_commentTitle{
+  font-size: 18px;
+  margin: 16px 12px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.ToDoList_task-info_date{
+  display: flex;
+}
+
+.ToDoList_task-info_date_created{
+  margin-right: 10px;
+  border-bottom: 1px solid;
+}
+
+.ToDoList_task-info_date_date{
+  border-bottom: 1px solid;
+}
+
+.ToDoList_task-icons_info:hover {
+  background-color: #56d5e1;
+  color: white;
+}
+
+.ToDoForm-button_edit-comment{
+  margin: 16px 12px;
+  background: none;
+  transition: 0.3s;
+}
+.ToDoForm-button_edit-comment:hover{
+  background-color: #56d5e1;
+  color: white;
+}
+
+.ToDoForm-button_save-comment{
+  margin: 16px 12px;
+  background: none;
+  transition: 0.3s;
+}
+
+.ToDoForm-button_save-comment:hover{
+  background-color: rgba(122, 216, 40, 1);
+  color: white;
+}
+
+.ToDoForm-button_add-comment{
+  margin: 16px 12px;
+  background: none;
+  transition: 0.3s;
+}
+
+.ToDoForm-button_add-comment:hover{
+  background-color: #56d5e1;
+  color: white;
+}
